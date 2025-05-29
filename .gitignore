@@ -1,2 +1,3 @@
 node_modules
-.envcredentials.json
+.env
+credentials.json
