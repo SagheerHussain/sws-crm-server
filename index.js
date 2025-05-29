@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Initialize Google Drive API Auth
 const auth = new google.auth.GoogleAuth({
-    keyFile: process.env.GOOGLE_SERVICE_ACCOUNT,
+    keyFile: process.env.GOOGLE_CREDENTIALS,
     scopes: ["https://www.googleapis.com/auth/drive"],
 });
 
