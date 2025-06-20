@@ -11,8 +11,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // ************************ Update Unread Messages ************************
-const updateUnreadMessagesRoute = require("./update_unread_messages");
-app.use("/", updateUnreadMessagesRoute);
+// const updateUnreadMessagesRoute = require("./update_unread_messages");
+// app.use("/", updateUnreadMessagesRoute);
 // ************************ Update Unread Messages ************************
 
 
