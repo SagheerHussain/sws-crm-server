@@ -1,3 +1,5 @@
+
+// Import required modules
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -7,6 +9,13 @@ require("dotenv").config();
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+// ************************ Update Unread Messages ************************
+const updateUnreadMessagesRoute = require("./update_unread_messages");
+app.use("/", updateUnreadMessagesRoute);
+// ************************ Update Unread Messages ************************
+
+
 
 // ✅ Use credentials instead of keyFile
 const auth = new google.auth.GoogleAuth({
